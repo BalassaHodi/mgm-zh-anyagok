@@ -3,7 +3,7 @@
 ## Hasznos linkek a repon belül
 [Gyakorlati anyagok](/Gyakorlatok/README.md) - itt van minden gyakorlat kijegyzetelve
 
-[Előadás anyagok](/Előadások) - itt vannak a PPT-k
+[Előadás anyagok](/Előadások) - itt vannak a PPT-k pdf formátumban
 
 [ZH gyakorlások](</ZH gyakorlások/README.md>) - itt van minden mintaZH feladat kijegyzetelve
 
