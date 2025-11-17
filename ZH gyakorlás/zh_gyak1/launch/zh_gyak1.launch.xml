@@ -1,0 +1,32 @@
+<launch>
+    <!-- Start rosbag play -->
+    <executable
+        cmd="ros2 bag play --clock 1000 $(find-pkg-share gyak3)/bag"
+        output="screen"
+        name="rosbag_play"
+        shell="true"
+    />
+
+    <!-- Built in tf2 node -->
+    <node pkg="tf2_ros" exec="static_transform_publisher" name="tf2_broadcaster" output="screen"
+        args="0.0 0.0 0.0 0.0 0.0 0.0 map odom" />
+
+    <!-- Custom nodes-->
+    <!-- SavePathNode -->
+    <!-- <node pkg="zh_gyak1" exec="save_path" name="save_path" output="screen">
+        <param name="topic_name" value="/odom" />
+        <param name="file_path" value="/workspace/src/zh_gyak/zh_gyak1/param/positions.txt" />
+        <param name="distance" value="0.1" />
+    </node> -->
+
+    <!-- PublishPathNode -->
+    <node pkg="zh_gyak1" exec="pub_path" name="pub_path" output="screen">
+        <param name="file_path" value="/workspace/src/zh_gyak/zh_gyak1/param/positions.txt" />
+        <param name="frame_id" value="map" />
+    </node>
+
+    <!-- RVIZ -->
+    <node pkg="rviz2" exec="rviz2" name="rviz2"
+        args="-d $(find-pkg-share zh_gyak1)/rviz/zh_gyak1.rviz" />
+
+</launch>
