@@ -5,8 +5,6 @@
 
 [Előadás anyagok](/Előadások) - itt vannak a PPT-k pdf formátumban
 
-[ZH gyakorlások](</ZH gyakorlások/README.md>) - itt van minden mintaZH feladat kijegyzetelve
+[ZH gyakorlás](</ZH gyakorlások/>) - itt van minden mintaZH feladat kijegyzetelve
 
-[Általános információk](</Általános infok/README.md>) - itt van minden általános info
-
-**NOTE: a linkek még nem működnek**
+[Zalán ZH szedet](</Zalán ZH szedet/mgm zh szedet.pdf>) - itt van a Zalán által írt segédlet pdf-ben
